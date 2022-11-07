@@ -1,0 +1,63 @@
+<div class="card">
+    <div class="card-title">
+        <h2>EDIT movie</h2>
+    </div>
+    <div class="card-body">
+
+        <div class="w3-container">
+            <form [formGroup]="editForm" novalidate class="form">
+                <div class="row">
+                    <div class="col-md-3"> Title</div>
+                    <div class="col-md-9">
+
+                        <input type="text" name="title" formControlName="title" autocomplete="off" class="form-control input-sm" placeholder="Enter the movie name">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> category</div>
+                    <div class="col-md-9">
+
+                        <select name="category_id" formControlName="category_id" autocomplete="off" class="form-control input-sm">
+                                <option *ngFor="let category of catigories;" value="{{category.id}}">{{category.titel}}</option>
+                                
+
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> Rate</div>
+                    <div class="col-md-9">
+
+                        <input type="number" name="Rate" formControlName="Rate" autocomplete="off" class="form-control input-sm" placeholder="Enter the movie Rate">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> photo</div>
+                    <div class="col-md-9">
+
+                        <input type="file" name="image" formControlName="image" autocomplete="off" class="form-control input-sm" placeholder="Enter the movie name">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> Discription</div>
+                    <div class="col-md-9">
+
+                        <textarea rows="3" name="description" formControlName="description" autocomplete="off" class="form-control input-sm" placeholder="Enter the movie description">
+                        </textarea>
+                    </div>
+
+                </div>
+                <input type="text" name="id" formControlName="id" hidden autocomplete="off" class="form-control input-sm">
+
+                <button type="submit" (click)="onEdit()" class="btn btn-success"> update</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>

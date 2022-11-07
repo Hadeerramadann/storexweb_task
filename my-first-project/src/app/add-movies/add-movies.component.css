@@ -1,0 +1,28 @@
+.card {
+    margin-top: 12%;
+    /* padding-top: 10%; */
+    position: relative;
+    /* padding: 13px; */
+    width: 80%;
+}
+
+.container {
+    position: absolute;
+}
+
+.card-title {
+    background-color: cornflowerblue;
+    padding: 14px;
+}
+
+.col-3 {
+    text-align: right;
+}
+
+h2 {
+    color: white;
+}
+
+.row {
+    margin-top: 4px;
+}

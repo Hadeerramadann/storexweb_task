@@ -1,0 +1,27 @@
+<div class="card">
+    <div class="card-title">
+        <h2>EDIT category</h2>
+    </div>
+    <div class="card-body">
+
+        <div class="w3-container">
+            <form [formGroup]="editForm" novalidate class="form">
+                <div class="row">
+                    <div class="col-md-3"> Title</div>
+                    <div class="col-md-9">
+
+                        <input type="text" name="titel" formControlName="titel" autocomplete="off" class="form-control input-sm">
+
+                    </div>
+                    <input type="text" name="id" formControlName="id" hidden autocomplete="off" class="form-control input-sm">
+
+                </div>
+                <button type="submit" (click)="onEdit()" class="btn btn-success"> update</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>

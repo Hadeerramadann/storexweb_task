@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <a class="navbar-brand" routerLink="home" routerLinkActive="active" style="margin-left: 5%;">
+    STOREXWEB </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample" aria-controls="navbars Example" aria-expanded="false">
+        
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExample">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" *ngIf="loginbtn" routerLink="home" routerLinkActive="active">Home </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" *ngIf="logoutbtn" routerLink="" routerLinkActive="active">Dashboard </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" *ngIf="loginbtn" routerLink="login" routerLinkActive="active"> Login </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" *ngIf="loginbtn" routerLink="registration" routerLinkActive="active">Registration </a>
+            </li>
+
+            <li class="nav-item">
+                <button type="button" *ngIf="logoutbtn" class="btn btn-danger" (click)="logout()">logout</button>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+<div>
+    <!-- <router-outlet></router-outlet> -->
+    <app-dashboard>
+
+    </app-dashboard>
+
+
+</div>

@@ -1,0 +1,29 @@
+<div class="card">
+    <div class="card-title">
+
+        <h2>Add category</h2>
+
+
+
+    </div>
+    <div class="card-body">
+
+        <div class="w3-container">
+            <form [formGroup]="addForm" (ngSubmit)="postdata(addForm)" novalidate class="form">
+                <div class="row">
+                    <div class="col-md-3"> Title</div>
+                    <div class="col-md-9">
+
+                        <input type="text" name="titel" formControlName="titel" autocomplete="off" class="form-control input-sm" placeholder="Enter the category name">
+
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success"> save</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
